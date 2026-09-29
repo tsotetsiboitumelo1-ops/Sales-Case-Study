@@ -253,8 +253,8 @@ candidate_promo_days AS (
 promo_period_starts AS (
 
     -- 5. A new promotion period starts if:
-    -- - it is the first promo date, or
-    -- - the previous promo date was more than one day ago.
+    -- it is the first promo date, or
+    -- the previous promo date was more than one day ago.
     SELECT
         *,
 
@@ -450,7 +450,7 @@ WHERE promotion_number <= 3
 
 ORDER BY promotion_number;
 -----------------------------------------------
---INSPECTING THE CREATED PED TABLE
+--Inspecting the table
 -----------------------------------------------
 SELECT *
 FROM promotion_ped_results;
